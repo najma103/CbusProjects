@@ -109,7 +109,7 @@ namespace VariableNaming
             double yoyoPrice = .24;
             double whistlePrice = .14;
             double totalForToys = yoyoPrice + whistlePrice;
-
+         
             /*
             13. Mrs. Hilt made 5 Rice Krispie Treats. She used 8 large marshmallows
             and 10 mini marshmallows.How many marshmallows did she use
@@ -124,62 +124,99 @@ namespace VariableNaming
             Elementary School received 17 inches of snow. How much more snow
             did Mrs. Hilt's house have?
             */
-
+            int inchesOfSnowAtHilt = 29;
+            int inchesOfSnowAtBrecknock = 17;
+            int hiltSnowLessBrecknockSnow = inchesOfSnowAtHilt - inchesOfSnowAtBrecknock;
             /*
             15. Mrs. Hilt has $10. She spends $3 on a toy truck and $2 on a pencil
             case. How much money does she have left?
             */
+            int moneyOnHand = 10;
+            int moneySpent = 3 + 2;
+            int remainingMoney = moneyOnHand - moneySpent;
 
             /*
             16. Josh had 16 marbles in his collection. He lost 7 marbles. How many
             marbles does he have now?
             */
-
+            int initialMarbleCollection = 16;
+            int lostMarbles = 7;
+            int remainingMarbleCollection = initialMarbleCollection - lostMarbles;
             /*
             17. Megan has 19 seashells. How many more seashells does she need to
             find to have 25 seashells in her collection?
             */
+            int CurrentSeashelCount = 19;
+            int neededSeashels = 25;
+            int seashelsYetToBeCollected = neededSeashels - CurrentSeashelCount;
 
             /*
             18. Brad has 17 balloons. 8 balloons are red and the rest are green. How
             many green balloons does Brad have?
             */
-
+            int totalBalloons = 17;
+            int redBalloons = 8;
+            int greenBalloons = totalBalloons - redBalloons;
             /*
             19. There are 38 books on the shelf. Marta put 10 more books on the shelf.
             How many books are on the shelf now?
             */
+            int currentBookCount = 38;
+            int additionBooks = 10;
+            int newBookCount = currentBookCount + additionBooks;
 
             /*
             20. A bee has 6 legs. How many legs do 8 bees have?
             */
+            int numOfBeeLegs = 6;
+            int totalBees = 8;
+            int totalBeeLegs = numOfBeeLegs * totalBees;
 
             /*
             21. Mrs. Hilt bought an ice cream cone for 99 cents. How much would 2 ice
             cream cones cost?
             */
-
+            double icecreamPrice = 0.99;
+            int numOfIcecreamsBought = 2;
+            double costOfIcecream = icecreamPrice * numOfIcecreamsBought;
+            Console.WriteLine("Ice Cream price: 99cents times 2 Ice Creams: " + costOfIcecream);
             /*
             22. Mrs. Hilt wants to make a border around her garden. She needs 125
             rocks to complete the border. She has 64 rocks. How many more rocks
             does she need to complete the border?
             */
+            int rocksNeeded = 125;
+            int rocksOnHand = 64;
+            int remainingRocks = rocksNeeded - rocksOnHand;
 
             /*
             23. Mrs. Hilt had 38 marbles. She lost 15 of them. How many marbles does
             she have left?
             */
-
+            int hiltMarbles = 38;
+            int hiltLostMarbles = 15;
+            int hiltRemainingMarbles = hiltMarbles - hiltLostMarbles;
             /*
             24. Mrs. Hilt and her sister drove to a concert 78 miles away. They drove 32
             miles and then stopped for gas. How many miles did they have left to drive?
             */
+            int distanceAway = 78;
+            int distanceTraveled = 32;
+            int remainingDistance = distanceAway - distanceTraveled;
 
             /*
             25. Mrs. Hilt spent 1 hour and 30 minutes shoveling snow on Saturday
             morning and 45 minutes shoveling snow on Saturday afternoon. How
             much total time did she spend shoveling snow?
             */
+            int morningShovelMinutes = 90;
+            int afternoonShovelMinutes = 45;
+            int totalMinutesShoveling = morningShovelMinutes + afternoonShovelMinutes;
+
+            int numOfHoursShoveling = totalMinutesShoveling / 60;
+            double remainingMinutes = (double)totalMinutesShoveling % 60;
+            Console.WriteLine("Shovelled on Saturday:  " +  numOfHoursShoveling + " hours and "
+                + remainingMinutes + " minutes. ");
 
             /*    
             26. Mrs. Hilt bought 6 hot dogs. Each hot dog cost 50 cents. How much
