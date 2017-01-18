@@ -241,27 +241,40 @@ namespace VariableNaming
             were orange. If 20 of the butterflies were orange, how many of them
             were red?
             */
+            int totButterflies = 33;
+            int orangeButterflies = 20;
+            int redButterflies = totButterflies - orangeButterflies;
 
             /*    
             29. Kate gave the clerk $1.00. Her candy cost 54 cents. How much change
             should Kate get back?
             */
+            double kateTotalMoney = 1.00;
+            double kateCandyCost = 0.54;
+            double kateChange = kateTotalMoney - kateCandyCost;
 
             /*
             30. Mark has 13 trees in his backyard. If he plants 12 more, how many trees
             will he have?
             */
-
+            int oldTrees = 13;
+            int newTrees = 12;
+            int totalTrees = oldTrees + newTrees;
             /*    
             31. Joy will see her grandma in two days. How many hours until she sees
             her?
             */
+            int dayInHours = 24;
+            int numOfDays = 2;
+            int hoursTillJoySeesGrandma = dayInHours * numOfDays;
 
             /*
             32. Kim has 4 cousins. She wants to give each one 5 pieces of gum. How
             much gum will she need?
             */
-
+            int kimCousins = 4;
+            int gumsPerCousing = 5;
+            int totalGumsKimNeeds = kimCousins * gumsPerCousing;
             /*
             33. Dan has $3.00. He bought a candy bar for $1.00. How much money is
             left?
@@ -289,51 +302,79 @@ namespace VariableNaming
             36. Arthur baked 35 muffins. How many more muffins does Arthur have to
             bake to have 83 muffins?
             */
+            int arthurBakedMuffins = 35;
+            int totalMuffinsArthurNeeds = 83;
+            int muffinsYetBaked = totalMuffinsArthurNeeds - arthurBakedMuffins;
 
             /*
             37. Willy has 1400 crayons. Lucy has 290 crayons. How many more
             crayons does Willy have then Lucy?
             */
-
+            int willyCrayons = 1400;
+            int lucyCrayons = 290;
+            int willyCrayonsLessLucyCrayons = willyCrayons - lucyCrayons;
             /*
             38. There are 10 stickers on a page. If you have 22 pages of stickers, how
             many stickers do you have?
             */
-
+            int numOfStickersPerPage = 10;
+            int numOfPages = 22;
+            int totalStickers = numOfStickersPerPage * numOfPages;
             /*
             39. There are 96 cupcakes for 8 children to share. How much will each
             person get if they share the cupcakes equally?
             */
+            int totalCupCakes = 96;
+            int totalChildren = 8;
+            int cupCakesPerChild = totalCupCakes / totalChildren;
 
             /*
             40. She made 47 gingerbread cookies which she will distribute equally in
             tiny glass jars. If each jar is to contain six cookies each, how many
             cookies will not be placed in a jar?
             */
+            int totalGingerbread = 47;
+            int gingerbreadPerJar = 6;
+            int gingerbreadNotInJar = totalGingerbread % gingerbreadPerJar;
 
             /*
             41. She also prepared 59 croissants which she plans to give to her 8
             neighbors. If each neighbor received and equal number of croissants,
             how many will be left with Marian?
             */
-
+            int totPrepedCroisants = 59;
+            int totNeighbors = 8;
+            int remainingCroisantsForMarian = totPrepedCroisants % totNeighbors;
             /*
             42. Marian also baked oatmeal cookies for her classmates. If she can
             place 12 cookies on a tray at a time, how many trays will she need to
             prepare 276 oatmeal cookies at a time?
             */
 
+            int oatmealCookies = 276;
+            int numOfCookiesPerTray = 12;
+            int numOfTraysNeeded = oatmealCookies / numOfCookiesPerTray;
+
             /*
             43. Marian’s friends were coming over that afternoon so she made 480
             bite-sized pretzels. If one serving is equal to 12 pretzels, how many
             servings of bite-sized pretzels was Marian able to prepare?
             */
+            int totalPretzels = 480;
+            int servingSize = 12;
+            int totalServings = totalPretzels / servingSize;
 
             /*
             44. Lastly, she baked 53 lemon cupcakes for the children living in the city
             orphanage. If two lemon cupcakes were left at home, how many
             boxes with 3 lemon cupcakes each were given away?
             */
+
+            int lemonCupCakes = 53;
+            int lemonCupCakesLeftAtHome = 2;
+            int lemonCupCakesPerBox = 3;
+            int numOfLemonCupCakesBoxes =
+                (lemonCupCakes - lemonCupCakesLeftAtHome) / lemonCupCakesPerBox;
 
             /*
             45. Susie's mom prepared 74 carrot sticks for breakfast. If the carrots
