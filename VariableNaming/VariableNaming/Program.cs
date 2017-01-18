@@ -222,11 +222,19 @@ namespace VariableNaming
             26. Mrs. Hilt bought 6 hot dogs. Each hot dog cost 50 cents. How much
             money did she pay for all of the hot dogs?
             */
+            int hotDogs = 6;
+            int cost = 50; // cents
+            int totalCost = hotDogs * cost / 100;
+            Console.WriteLine("Total Cost of the HotDogs is: " + totalCost + " dollars");
 
             /*
             27. Mrs. Hilt has 50 cents. A pencil costs 7 cents. How many pencils can
             she buy with the money she has?
             */
+            int HiltMoney = 50; // cents
+            int costOfPencil = 7; // cents
+            int totalPencilCanBuy = HiltMoney / costOfPencil;
+            Console.WriteLine("Mrs. Hilt can buy " + totalPencilCanBuy + " pencils");
 
             /*    
             28. Mrs. Hilt saw 33 butterflies. Some of the butterflies were red and others
@@ -259,16 +267,24 @@ namespace VariableNaming
             left?
             */
 
+            double danMoney = 3.00;
+            double candyBarCost = 1.00;
+            double remainingDanMoney = danMoney - candyBarCost;
+
             /*
             34. 5 boats are in the lake. Each boat has 3 people. How many people are
             on boats in the lake?
             */
-
+            int numOfBoatsInLake = 5;
+            int numOfPeopleInEachBoat = 3;
+            int totalNumOfPeople = numOfBoatsInLake * numOfPeopleInEachBoat;
             /*
             35. Ellen had 380 legos, but she lost 57 of them. How many legos does she
             have now?
             */
-
+            int ellenLegos = 380;
+            int ellenNumOfLostLegos = 57;
+            int ellensRemainingLegos = ellenLegos - ellenNumOfLostLegos;
             /*
             36. Arthur baked 35 muffins. How many more muffins does Arthur have to
             bake to have 83 muffins?
@@ -324,36 +340,55 @@ namespace VariableNaming
             were served equally to 12 people, how many carrot sticks were left
             uneaten?
             */
+            int totalCarrots = 74;
+            int totalGuests = 12;
+            int uneatenCarrots = totalCarrots % totalGuests;
 
             /*
             46. Susie and her sister gathered all 98 of their teddy bears and placed
             them on the shelves in their bedroom. If every shelf can carry a
             maximum of 7 teddy bears, how many shelves will be filled?
             */
-
+            int numOfTedyBears = 98;
+            int totalTedyPerShelf = 7;
+            int totalShelvesNeeded = numOfTedyBears / totalTedyPerShelf;
             /*
             47. Susie’s mother collected all family pictures and wanted to place all of
             them in an album. If an album can contain 20 pictures, how many
             albums will she need if there are 480 pictures?
             */
-
+            int totalFamilyPictures = 480;
+            int maxSizePerAlbum = 20;
+            int totalAlbumsNeeded = totalFamilyPictures / maxSizePerAlbum;
             /*
             48. Joe, Susie’s brother, collected all 94 trading cards scattered in his
             room and placed them in boxes. If a full box can hold a maximum of 8
             cards, how many boxes were filled and how many cards are there in
             the unfilled box?
             */
+            int totalTradingCards = 94;
+            int numOfCardsPerBox = 8;
+            int totFilledBoxes = totalTradingCards / numOfCardsPerBox;
+            int totRemainingCards = totalTradingCards % numOfCardsPerBox;
+            Console.WriteLine("Full boxes : " + totFilledBoxes + " remaining cards: "
+                + totRemainingCards);
 
             /*
             49. Susie’s father repaired the bookshelves in the reading room. If he has
             210 books to be distributed equally on the 10 shelves he repaired,
             how many books will each shelf contain?
             */
+            int numOfSusieBooks = 210;
+            int numOfShelfs = 10;
+            int totalBooksPerShelf = numOfSusieBooks / numOfShelfs;
 
             /*
             50. Cristina baked 17 croissants. If she planned to serve this equally to
             her seven guests, how many will each have?
             */
+            int numOfCristinaCroissants = 17;
+            int numOfGuests = 7;
+            double equalPortion = (double)numOfCristinaCroissants / numOfGuests;
 
 
         }
